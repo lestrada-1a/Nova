@@ -1,0 +1,32 @@
+{
+  "name": "@nova/shape-definitions",
+  "version": "1.0.0",
+  "description": "Shape category and definition registry for the Nova Whiteboards shape picker.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.12",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "bpmn",
+    "shapes",
+    "diagramming",
+    "whiteboard",
+    "uml",
+    "flowchart"
+  ],
+  "license": "MIT"
+}
