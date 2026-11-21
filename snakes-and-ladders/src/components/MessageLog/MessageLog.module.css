@@ -1,0 +1,22 @@
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.log {
+  max-height: 12rem;
+  margin: 0;
+  padding: 0.5rem 0.75rem 0.5rem 2rem;
+  overflow-y: auto;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.log li {
+  padding: 0.1rem 0;
+}
+
+.log:focus-visible {
+  outline: 3px solid #1565c0;
+}

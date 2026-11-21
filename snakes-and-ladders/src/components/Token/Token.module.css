@@ -1,0 +1,46 @@
+.token {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  animation: hop 0.25s ease-out;
+}
+
+.small {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.6rem;
+  border-width: 1px;
+}
+
+.active {
+  box-shadow:
+    0 0 0 2px #ffd600,
+    0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes hop {
+  0% {
+    transform: translateY(0) scale(0.8);
+  }
+  50% {
+    transform: translateY(-35%) scale(1.15);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .token {
+    animation: none;
+  }
+}
