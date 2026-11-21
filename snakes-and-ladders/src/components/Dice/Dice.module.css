@@ -1,0 +1,75 @@
+.dice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #3e2723;
+  border-radius: 12px;
+  background: #fff;
+  color: #212121;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.rolling {
+  animation: tumble 0.4s linear infinite;
+}
+
+.button {
+  min-width: 8rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #1b5e20;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+  background: #2e7d32;
+}
+
+.button:focus-visible {
+  outline: 3px solid #ffd600;
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  background: #616161;
+  cursor: not-allowed;
+}
+
+.status {
+  min-height: 1.25rem;
+  font-size: 0.9rem;
+}
+
+@keyframes tumble {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rolling {
+    animation: none;
+    opacity: 0.6;
+  }
+}
